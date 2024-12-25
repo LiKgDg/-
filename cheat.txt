@@ -1,0 +1,433 @@
+以下是您提供的API方法列表的翻译、排列、加注释和解释：
+
+// 启用或禁用盔甲覆盖显示
+armorOverlay.disable();  // 禁用盔甲覆盖
+armorOverlay.enable();   // 启用盔甲覆盖
+armorOverlay.toggle();   // 切换盔甲覆盖状态
+// 检查盔甲覆盖是否启用
+boolean isEnabled = armorOverlay.isEnabled(); // 返回布尔值
+
+// 设置盔甲覆盖的启用状态
+armorOverlay.setEnabled(true); // 设置为启用
+armorOverlay.setEnabled(false); // 设置为禁用
+
+// 自动桶功能
+autoBucket.disable();  // 禁用自动桶
+autoBucket.enable();   // 启用自动桶
+autoBucket.toggle();   // 切换自动桶状态
+boolean isAutoBucketEnabled = autoBucket.isEnabled(); // 检查自动桶是否启用
+autoBucket.setEnabled(true); // 设置自动桶为启用
+autoBucket.setEnabled(false); // 设置自动桶为禁用
+
+// 自动制作功能
+autoCraft.disable();  // 禁用自动制作
+autoCraft.enable();   // 启用自动制作
+autoCraft.toggle();   // 切换自动制作状态
+boolean isAutoCraftEnabled = autoCraft.isEnabled(); // 检查自动制作是否启用
+autoCraft.setEnabled(true); // 设置自动制作为启用
+autoCraft.setEnabled(false); // 设置自动制作为禁用
+
+// 自动暴击功能
+autoCriticals.disable();  // 禁用自动暴击
+autoCriticals.enable();   // 启用自动暴击
+autoCriticals.toggle();   // 切换自动暴击状态
+boolean isAutoCriticalsEnabled = autoCriticals.isEnabled(); // 检查自动暴击是否启用
+autoCriticals.setEnabled(true); // 设置自动暴击为启用
+autoCriticals.setEnabled(false); // 设置自动暴击为禁用
+
+// 自动断开连接功能
+autoDisconnect.disable();  // 禁用自动断开
+autoDisconnect.enable();   // 启用自动断开
+autoDisconnect.toggle();   // 切换自动断开状态
+boolean isAutoDisconnectEnabled = autoDisconnect.isEnabled(); // 检查自动断开是否启用
+autoDisconnect.setEnabled(true); // 设置自动断开为启用
+autoDisconnect.setEnabled(false); // 设置自动断开为禁用
+
+// 丢弃所有物品
+autoDrop.dropItems(); // 丢弃所有物品
+
+// 自动进食功能
+autoEat.disable();  // 禁用自动进食
+autoEat.enable();   // 启用自动进食
+autoEat.toggle();   // 切换自动进食状态
+boolean isAutoEatEnabled = autoEat.isEnabled(); // 检查自动进食是否启用
+autoEat.setEnabled(true); // 设置自动进食为启用
+autoEat.setEnabled(false); // 设置自动进食为禁用
+
+// 自动热键功能
+autoHotbar.disable();  // 禁用自动热键
+autoHotbar.enable();   // 启用自动热键
+autoHotbar.toggle();   // 切换自动热键状态
+boolean isAutoHotbarEnabled = autoHotbar.isEnabled(); // 检查自动热键是否启用
+autoHotbar.setEnabled(true); // 设置自动热键为启用
+autoHotbar.setEnabled(false); // 设置自动热键为禁用
+
+// 床岩破坏处理
+bedrockBreaker.process(); // 处理床岩破坏
+
+// 闪烁功能
+blink.apply(); // 应用闪烁
+blink.disable(); // 禁用闪烁
+blink.enable(); // 启用闪烁
+float distance = blink.getDistance(); // 获取闪烁距离
+int packets = blink.getPackets(); // 获取闪烁数据包数量
+boolean isBlinkEnabled = blink.isEnabled(); // 检查闪烁是否启用
+
+// 方块放置
+blockPlacer.placeOne(); // 放置一个方块
+
+// 方块功能
+boolean isBlockEnabled = blocks.isEnabled("stone"); // 检查指定ID的方块是否启用
+blocks.toggle("stone"); // 切换指定ID的方块的启用状态
+
+// 飞行功能
+boolean isFlyEnabled = boatHack.isFlyEnabled(); // 检查飞行是否启用
+boatHack.toggleFly(); // 切换飞行状态
+
+// 颜色功能
+string gradientColor = color.gradient("#FF0000", "#0000FF", 0.5); // 生成颜色渐变
+string hexColor = color.toHex(255, 165, 0); // 将RGB颜色转换为十六进制
+
+// 容器按钮功能
+containerButtons.dropAll(true); // 丢弃所有容器内物品
+boolean isAutoCloseEnabled = containerButtons.isAutoCloseEnabled(); // 检查自动关闭是否启用
+boolean isAutoDropAllEnabled = containerButtons.isAutoDropAllEnabled(); // 检查自动丢弃所有物品是否启用
+boolean isAutoTakeAllEnabled = containerButtons.isAutoTakeAllEnabled(); // 检查自动取出所有物品是否启用
+containerButtons.smartPut(); // 智能放置物品
+containerButtons.takeAll(true); // 取出所有容器内物品
+containerButtons.toggleAutoClose(); // 切换自动关闭状态
+containerButtons.toggleAutoDropAll(); // 切换自动丢弃所有物品状态
+containerButtons.toggleAutoTakeAll(); // 切换自动取出所有物品状态
+
+// 转换功能
+string floatToString = convert.toString(123.456, 2); // 将浮点数转换为字符串，保留两位小数
+string floatToStringDefault = convert.toString(123.456); // 将浮点数转换为字符串
+string intToString = convert.toString(123); // 将整数转换为字符串
+
+// 鞘翅飞行功能
+elytraFly.disable();  // 禁用鞘翅飞行
+elytraFly.enable();   // 启用鞘翅飞行
+elytraFly.toggle();   // 切换鞘翅飞行状态
+boolean isElytraFlyEnabled = elytraFly.isEnabled(); // 检查鞘翅飞行是否启用
+elytraFly.setEnabled(true); // 设置鞘翅飞行为启用
+elytraFly.setEnabled(false); // 设置鞘翅飞行为禁用
+
+// 实体计数功能
+int entityCount = entities.getCount("Zombie"); // 获取指定类名的实体数量
+int entityCountById = entities.getCountById("minecraft:zombie"); // 根据ID获取实体数量
+boolean isEntityEnabled = entities.isEnabled("Zombie"); // 检查指定类名的实体是否启用
+entities.toggle("Zombie"); // 切换指定类名的实体的启用状态
+
+// 探索小地图标记
+explorationMiniMap.addMarker(); // 添加探索小地图标记
+
+// 假延迟功能
+fakeLag.disable();  // 禁用假延迟
+fakeLag.enable();   // 启用假延迟
+fakeLag.toggle();   // 切换假延迟状态
+boolean isFakeLagEnabled = fakeLag.isEnabled(); // 检查假延迟是否启用
+fakeLag.setEnabled(true); // 设置假延迟为启用
+fakeLag.setEnabled(false); // 设置假延迟为禁用
+
+// 快速破坏功能
+fastBreak.disable();  // 禁用快速破坏
+fastBreak.enable();   // 启用快速破坏
+fastBreak.toggle();   // 切换快速破坏状态
+boolean isFastBreakEnabled = fastBreak.isEnabled(); // 检查快速破坏是否启用
+fastBreak.setEnabled(true); // 设置快速破坏为启用
+fastBreak.setEnabled(false); // 设置快速破坏为禁用
+
+// 飞行外挂功能
+flyHack.disable();  // 禁用飞行外挂
+flyHack.enable();   // 启用飞行外挂
+flyHack.toggle();   // 切换飞行外挂状态
+boolean isFlyHackEnabled = flyHack.isEnabled(); // 检查飞行外挂是否启用
+flyHack.setEnabled(true); // 设置飞行外挂为启用
+flyHack.setEnabled(false); // 设置飞行外挂为禁用
+
+// 字体功能
+int lineHeight = font.getLineHeight(); // 获取字体行高
+int stringWidth = font.getStringWidth("Hello, World!"); // 获取字符串宽度
+
+// 自由摄像机功能
+string coordinates = freeCam.getCoordinates(); // 获取自由摄像机坐标
+string targetBlockCoordinates = freeCam.getTargetBlockCoordinates(); // 获取目标方块坐标
+string targetBlockName = freeCam.getTargetBlockName(); // 获取目标方块名称
+boolean isFreeCamEnabled = freeCam.isEnabled(); // 检查自由摄像机是否启用
+freeCam.setRenderHands(true); // 设置自由摄像机是否渲染手部
+freeCam.startPath(); // 开始自由摄像机路径
+freeCam.toggle(); // 切换自由摄像机状态
+freeCam.toggleRenderHands(); // 切换自由摄像机是否渲染手部
+
+// 全亮功能
+fullBright.disable();  // 禁用全亮
+fullBright.enable();   // 启用全亮
+fullBright.toggle();   // 切换全亮状态
+boolean isFullBrightEnabled = fullBright.isEnabled(); // 检查全亮是否启用
+fullBright.setEnabled(true); // 设置全亮为启用
+fullBright.setEnabled(false); // 设置全亮为禁用
+
+// 游戏信息功能
+int dayTime = game.getDayTime(); // 获取游戏天数时间（以刻为单位）
+int tick = game.getTick(); // 获取游戏刻数
+string userName = game.getUserName(); // 获取用户名
+string version = game.getVersion(); // 获取游戏版本
+boolean isSinglePlayer = game.isSinglePlayer(); // 检查是否为单人游戏
+boolean isEnd = game.dimension.isEnd(); // 检查是否在末地
+boolean isNether = game.dimension.isNether(); // 检查是否在下界
+boolean isOverworld = game.dimension.isOverworld(); // 检查是否在主世界
+
+// 命中盒大小功能
+hitboxSize.disable();  // 禁用命中盒大小
+hitboxSize.enable();   // 启用命中盒大小
+hitboxSize.toggle();   // 切换命中盒大小状态
+boolean isHitboxSizeEnabled = hitboxSize.isEnabled(); // 检查命中盒大小是否启用
+hitboxSize.setEnabled(true); // 设置命中盒大小为启用
+hitboxSize.setEnabled(false); // 设置命中盒大小为禁用
+
+// 输入功能
+boolean isAltDown = input.isAltDown(); // 检查Alt键是否按下
+boolean isControlDown = input.isControlDown(); // 检查Control键是否按下
+boolean isKeyDown = input.isKeyDown("key.forward"); // 检查指定键是否按下
+boolean isShiftDown = input.isShiftDown(); // 检查Shift键是否按下
+
+// 背包功能
+boolean equipItem = inventory.equip("minecraft:diamond_sword"); // 装备指定ID的物品
+float chestItemDurability = inventory.getChestItemDurability(); // 获取胸甲的耐久度
+string chestItemId = inventory.getChestItemId(); // 获取胸甲的物品ID
+int itemCount = inventory.getCount("minecraft:diamond"); // 获取指定ID物品的数量
+float feetItemDurability = inventory.getFeetItemDurability(); // 获取护腿的耐久度
+string feetItemId = inventory.getFeetItemId(); // 获取护腿的物品ID
+float headItemDurability = inventory.getHeadItemDurability(); // 获取头盔的耐久度
+string headItemId = inventory.getHeadItemId(); // 获取头盔的物品ID
+float legsItemDurability = inventory.getLegsItemDurability(); // 获取护腿的耐久度
+string legsItemId = inventory.getLegsItemId(); // 获取护腿的物品ID
+float mainHandItemDurability = inventory.getMainHandItemDurability(); // 获取主手物品的耐久度
+string mainHandItemId = inventory.getMainHandItemId(); // 获取主手物品ID
+float offHandItemDurability = inventory.getOffHandItemDurability(); // 获取副手物品的耐久度
+string offHandItemId = inventory.getOffHandItemId(); // 获取副手物品ID
+boolean swapEquipChest = inventory.swapEquipChest("minecraft:diamond_chestplate"); // 交换装备胸甲
+boolean swapEquipFeet = inventory.swapEquipFeet("minecraft:diamond_boots"); // 交换装备护腿
+boolean swapEquipHead = inventory.swapEquipHead("minecraft:diamond_helmet"); // 交换装备头盔
+boolean swapEquipLegs = inventory.swapEquipLegs("minecraft:diamond_leggings"); // 交换装备护腿
+
+// 按键功能
+keys.up.click(); // 点击上键
+boolean isKeyUp = keys.up.isDown(); // 检查上键是否按下
+keys.up.setDown(true); // 设置上键为按下状态
+keys.up.setDown(false); // 设置上键为未按下状态
+keys.down.click(); // 点击下键
+boolean isKeyDown = keys.down.isDown(); // 检查下键是否按下
+keys.down.setDown(true); // 设置下键为按下状态
+keys.down.setDown(false); // 设置下键为未按下状态
+keys.left.click(); // 点击左键
+boolean isKeyLeft = keys.left.isDown(); // 检查左键是否按下
+keys.left.setDown(true); // 设置左键为按下状态
+keys.left.setDown(false); // 设置左键为未按下状态
+keys.right.click(); // 点击右键
+boolean isKeyRight = keys.right.isDown(); // 检查右键是否按下
+keys.right.setDown(true); // 设置右键为按下状态
+keys.right.setDown(false); // 设置右键为未按下状态
+keys.jump.click(); // 点击跳键
+boolean isKeyJump = keys.jump.isDown(); // 检查跳键是否按下
+keys.jump.setDown(true); // 设置跳键为按下状态
+keys.jump.setDown(false); // 设置跳键为未按下状态
+keys.sneak.click(); // 点击潜行键
+boolean isKeySneak = keys.sneak.isDown(); // 检查潜行键是否按下
+keys.sneak.setDown(true); // 设置潜行键为按下状态
+keys.sneak.setDown(false); // 设置潜行键为未按下状态
+keys.sprint.click(); // 点击疾跑键
+boolean isKeySprint = keys.sprint.isDown(); // 检查疾跑键是否按下
+keys.sprint.setDown(true); // 设置疾跑键为按下状态
+keys.sprint.setDown(false); // 设置疾跑键为未按下状态
+keys.drop.click(); // 点击丢弃键
+boolean isKeyDrop = keys.drop.isDown(); // 检查丢弃键是否按下
+keys.drop.setDown(true); // 设置丢弃键为按下状态
+keys.drop.setDown(false); // 设置丢弃键为未按下状态
+keys.attack.click(); // 点击攻击键
+boolean isKeyAttack = keys.attack.isDown(); // 检查攻击键是否按下
+keys.attack.setDown(true); // 设置攻击键为按下状态
+keys.attack.setDown(false); // 设置攻击键为未按下状态
+keys.use.click(); // 点击使用键
+boolean isKeyUse = keys.use.isDown(); // 检查使用键是否按下
+keys.use.setDown(true); // 设置使用键为按下状态
+keys.use.setDown(false); // 设置使用键为未按下状态
+
+// 杀意光环功能
+killAura.disable();  // 禁用杀意光环
+killAura.enable();   // 启用杀意光环
+killAura.toggle();   // 切换杀意光环状态
+boolean isKillAuraEnabled = killAura.isEnabled(); // 检查杀意光环是否启用
+killAura.setEnabled(true); // 设置杀意光环为启用
+killAura.setEnabled(false); // 设置杀意光环为禁用
+
+// 光照级别功能
+lightLevel.disable();  // 禁用光照级别
+lightLevel.enable();   // 启用光照级别
+lightLevel.toggle();   // 切换光照级别状态
+boolean isLightLevelEnabled = lightLevel.isEnabled(); // 检查光照级别是否启用
+lightLevel.setEnabled(true); // 设置光照级别为启用
+lightLevel.setEnabled(false); // 设置光照级别为禁用
+
+// 输入锁定功能
+boolean isHoldAttackEnabled = lockInputs.isHoldAttackEnabled(); // 检查是否启用持续攻击
+boolean isHoldForwardEnabled = lockInputs.isHoldForwardEnabled(); // 检查是否启用持续前进
+boolean isHoldUseEnabled = lockInputs.isHoldUseEnabled(); // 检查是否启用持续使用
+boolean isMouseInputDisabled = lockInputs.isMouseInputDisabled(); // 检查是否禁用鼠标输入
+lockInputs.toggleHoldAttack(); // 切换持续攻击状态
+lockInputs.toggleHoldForward(); // 切换持续前进状态
+lockInputs.toggleHoldUse(); // 切换持续使用状态
+lockInputs.toggleMouseInputDisabled(); // 切换鼠标输入禁用状态
+
+// 主要功能
+main.chat("Hello, World!"); // 发送聊天消息
+main.command("/home"); // 发送服务器命令，例如 /home
+string biome = main.getBiome(); // 获取当前生物群系
+string blockCoordinates = main.getBlockCoordinates(); // 获取方块坐标
+string calcNetherCoordinates = main.getCalcNetherCoordinates(); // 获取计算后的下界坐标
+string calcOverworldCoordinates = main.getCalcOverworldCoordinates(); // 获取计算后的主世界坐标
+string chunkCoordinates = main.getChunkCoordinates(); // 获取区块坐标
+string coordinates = main.getCoordinates(); // 获取坐标
+string direction = main.getDirection(); // 获取方向
+string horizontalSpeed = main.getHorizontalSpeed(); // 获取水平速度
+string speed = main.getSpeed(); // 获取速度
+string targetBlockCoordinates = main.getTargetBlockCoordinates(); // 获取目标方块坐标
+string targetBlockName = main.getTargetBlockName(); // 获取目标方块名称
+boolean isDebugScreenEnabled = main.isDebugScreenEnabled(); // 检查是否启用调试屏幕
+boolean isEspEnabled = main.isEspEnabled(); // 检查是否启用ESP
+main.openClosestChestBoat(); // 打开最近的箱子或船
+main.openTradingWithClosestVillager(); // 与最近的村民开启交易
+main.overlayMessage("Hello, World!"); // 显示悬浮消息
+main.overlayMessage("#FF0000", "Hello, World!"); // 显示悬浮消息，红色
+main.overlayMessage("#FF0000", "Hello, ", "#00FF00", "World!"); // 显示悬浮消息，红字和绿字
+main.systemMessage("Hello, World!"); // 显示系统消息
+main.systemMessage("#FF0000", "Hello, ", "#00FF00", "World!"); // 显示系统消息，红字和绿字
+main.systemMessage("#FF0000", "Hello, World!"); // 显示系统消息，红色
+main.toggleEsp(); // 切换ESP状态
+
+// 数学功能
+int absInt = math.abs(-123); // 计算整数的绝对值
+float absFloat = math.abs(-123.456); // 计算浮点数的绝对值
+int ceil = math.ceil(123.456); // 计算浮点数的上限
+int floor = math.floor(123.456); // 计算浮点数的下限
+float random = math.random(); // 生成[0..1]范围内的随机数
+int randomInt = math.randomInt(0, 100); // 生成指定范围内的随机整数
+int randomIntDefault = math.randomInt(100); // 生成0到指定数的随机整数
+int round = math.round(123.456); // 计算浮点数的四舍五入值
+float sqrt = math.sqrt(123.456); // 计算浮点数的平方根
+
+// 弧度制数学功能
+float acos = math.radians.acos(0.5); // 计算余弦值对应的弧度角
+float asin = math.radians.asin(0.5); // 计算正弦值对应的弧度角
+float atan = math.radians.atan(0.5); // 计算正切值对应的弧度角
+float atan2 = math.radians.atan2(0.5, 0.3); // 计算正切值对应的弧度角，y/x
+float cos = math.radians.cos(0.5); // 计算余弦值
+float sin = math.radians.sin(0.5); // 计算正弦值
+float tan = math.radians.tan(0.5); // 计算正切值
+float toDegrees = math.radians.toDegrees(0.5); // 将弧度转换为角度
+
+// 角度制数学功能
+float degreesAcos = math.degrees.acos(0.5); // 计算余弦值对应的角度
+float degreesAsin = math.degrees.asin(0.5); // 计算正弦值对应的角度
+float degreesAtan = math.degrees.atan(0.5); // 计算正切值对应的角度
+float degreesAtan2 = math.degrees.atan2(0.5, 0.3); // 计算正切值对应的角度，y/x
+float degreesCos = math.degrees.cos(0.5); // 计算余弦值
+float degreesSin = math.degrees.sin(0.5); // 计算正弦值
+float degreesTan = math.degrees.tan(0.5); // 计算正切值
+float toRadians = math.degrees.toRadians(0.5); // 将角度转换为弧度
+
+// 移动功能
+string jumpFactor = movement.getJumpFactor(); // 获取跳跃因子
+string speedMultiplierFactor = movement.getSpeedMultiplierFactor(); // 获取速度乘数因子
+boolean isOverrideJumpHeightEnabled = movement.isOverrideJumpHeightEnabled(); // 检查是否启用跳跃高度覆盖
+boolean isSpeedMultiplierEnabled = movement.isSpeedMultiplierEnabled(); // 检查是否启用速度乘数
+movement.setJumpFactor(1.5); // 设置跳跃因子
+movement.setSpeedMultiplierFactor(1.5); // 设置速度乘数因子
+movement.toggleOverrideJumpHeight(); // 切换跳跃高度覆盖状态
+movement.toggleSpeedMultiplier(); // 切换速度乘数状态
+
+// 防摔落功能
+noFall.disable();  // 禁用防摔落
+noFall.enable();   // 启用防摔落
+noFall.toggle();   // 切换防摔落状态
+boolean isNoFallEnabled = noFall.isEnabled(); // 检查防摔落是否启用
+noFall.setEnabled(true); // 设置防摔落为启用
+noFall.setEnabled(false); // 设置防摔落为禁用
+
+// 玩家信息功能
+int food = player.getFood(); // 获取食物值
+int health = player.getHealth(); // 获取生命值
+float x = player.getX(); // 获取X坐标
+float xRot = player.getXRot(); // 获取X轴旋转值
+float y = player.getY(); // 获取Y坐标
+float yRot = player.getYRot(); // 获取Y轴旋转值
+float z = player.getZ(); // 获取Z坐标
+boolean isElytraFlying = player.isElytraFlying(); // 检查是否在鞘翅飞行
+boolean isOnGround = player.isOnGround(); // 检查是否在地面上
+boolean isPassenger = player.isPassenger(); // 检查是否是乘客
+boolean isUnderwater = player.isUnderwater(); // 检查是否在水下
+player.lookAt(0, 0, 0); // 让玩家看向指定坐标
+player.setXRot(0); // 设置X轴旋转值
+player.setYRot(0); // 设置Y轴旋转值
+
+// 脚手架功能
+scaffold.disable();  // 禁用脚手架
+scaffold.enable();   // 启用脚手架
+scaffold.toggle();   // 切换脚手架状态
+boolean isScaffoldEnabled = scaffold.isEnabled(); // 检查脚手架是否启用
+scaffold.setEnabled(true); // 设置脚手架为启用
+scaffold.setEnabled(false); // 设置脚手架为禁用
+
+// 服务器插件功能
+string[] plugins = serverPlugins.get(); // 获取所有插件
+string[] bukkitPlugins = serverPlugins.getBukkit(); // 获取所有Bukkit插件
+
+// 潜影盒提示功能
+shulkerTooltip.disable();  // 禁用潜影盒提示
+shulkerTooltip.enable();   // 启用潜影盒提示
+shulkerTooltip.toggle();   // 切换潜影盒提示状态
+boolean isShulkerTooltipEnabled = shulkerTooltip.isEnabled(); // 检查潜影盒提示是否启用
+shulkerTooltip.setEnabled(true); // 设置潜影盒提示为启用
+shulkerTooltip.setEnabled(false); // 设置潜影盒提示为禁用
+
+// 传送功能
+boolean teleportToCrosshair = teleport.toCrosshair(10, 1); // 传送到准心位置
+boolean teleportVertical = teleport.vertical(10, 20, true, 1); // 垂直传送
+boolean teleportVerticalSimple = teleport.vertical(10, 1); // 简单垂直传送
+
+// 时间功能
+float seconds = time.getSeconds(); // 获取从某个静态时间点开始经过的秒数
+string formattedTime = time.getSystemTimeFormatted("HH:mm:ss"); // 获取格式化的系统时间
+
+// TPS功能
+float tps = tps.get(); // 获取服务器的TPS值
+
+// 变量功能
+boolean boolValue = variables.getBoolean("exampleBool"); // 获取布尔变量值
+float floatValue = variables.getFloat("exampleFloat"); // 获取浮点变量值
+int intValue = variables.getInteger("exampleInt"); // 获取整数变量值
+string stringValue = variables.getString("exampleString"); // 获取字符串变量值
+variables.setBoolean("exampleBool", true); // 设置布尔变量值
+variables.setFloat("exampleFloat", 1.23); // 设置浮点变量值
+variables.setInteger("exampleInt", 123); // 设置整数变量值
+variables.setString("exampleString", "Hello, World!"); // 设置字符串变量值
+
+// 村民滚动功能
+string state = villagerRoller.getState(); // 获取村民滚动状态
+string stopReason = villagerRoller.getStopReason(); // 获取停止原因
+boolean isActive = villagerRoller.isActive(); // 检查村民滚动是否激活
+villagerRoller.resetStopReason(); // 重置停止原因
+villagerRoller.start(); // 开始村民滚动
+villagerRoller.stop(); // 停止村民滚动
+villagerRoller.toggle(); // 切换村民滚动状态
+
+// 窗口功能
+int guiHeight = window.getGuiHeight(); // 获取Minecraft窗口绘图区域的高度
+int guiWidth = window.getGuiWidth(); // 获取Minecraft窗口绘图区域的宽度
+
+// 变焦功能
+zoom.start(1.0, 5.0); // 开始变焦
+zoom.stop(); // 停止变焦
+```
+
+这个列表包含了各种API方法的名称、用法、和简要说明。您可以根据需要调用这些方法来实现特定的功能。请注意，具体的实现细节和方法名称可能会根据您使用的具体脚本环境有所不同。
